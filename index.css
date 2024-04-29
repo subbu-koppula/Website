@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #faf5ef;
+    
+}
+.main-container{
+    background-color: #faf5ef;
+    max-width: 1000px;
+    min-width: 300px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    background-color: rgb(202, 207, 221);
+    border: 1px solid rgb(8, 27, 68);
+    border-bottom-width: 2px; 
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.date{
+    color: rgb(8, 27, 68);
+    background-color: rgb(202, 207, 221);
+    font-size: 2.5rem;
+    margin: 0;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    
+}
+
+
+.date:hover {
+    background-color: #8a929a; /* Darker background on hover */
+}
+
+
+.detail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex: 5;
+    height: 100%;
+    background-color: #faf5ef;
+    border: 1px solid rgb(8, 27, 68);
+    border-bottom-width: 2px; 
+}
+.day-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex: 1.5;
+    /* background-color: #faf5ef; */
+    color: rgb(8, 27, 68);
+    gap: 5px;
+}
+.day{
+    margin:0;
+    margin-left: 5px;
+}
+.month{
+    margin: 0;
+}
+.symbol{
+    margin: 0;
+}
+
+.day,.month,.symbol{
+    font-size: 1.2rem;
+}
+
+.week-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex: 1;
+    /* background-color: white; */
+    color: rgb(8, 27, 68);
+    gap: 10px;
+}
+
+.week{
+    margin:0;
+    margin-left: 5px;
+}
+.weather{
+    margin:0;
+}
+.week,.weather{
+    font-size: 0.8rem;
+}
+
+
+
+
+.table-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.table{
+    height: 100px;
+    width: 66.5%;
+    max-width: 695px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    border: 1px solid rgb(8, 27, 68);
+    text-align: left;
+    min-width: 100px;
+    color: rgb(8, 27, 68);
+}
+thead {
+    background-color: rgb(202, 207, 221);
+    border-bottom: 2px solid rgb(8, 27, 68);
+}
+
+
+
+.current-day {
+    background-color: rgb(202, 207, 221);
+}
+
